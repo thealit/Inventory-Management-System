@@ -5,8 +5,8 @@ A C# WinForms and SQL Server-based Inventory Management System for managing prod
 - User Authentication and Authorization
 - Inventory Item Management
 - Category and Unit Management
-- Low Stock and Out-of-Stock Monitoring
-- Real-Time Notifications
+- All Stocks, Low Stocks and Out-of-Stocks Count Monitoring
+- Polling Notifications
 - User Management
 - Audit Trail and Activity Logging
 - Search and Filter Functionality
