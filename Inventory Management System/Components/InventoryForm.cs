@@ -202,7 +202,7 @@ namespace Inventory_Management_System
                 _auditTrailPresenter = new AuditTrailPresenter(new AuditTrailRepository(), _auditTrailForm);
                 await _auditTrailForm.SetPresenter(_auditTrailPresenter);
             }
-     
+
             _currentForm = _inventoryForm;
         }
 
@@ -474,7 +474,7 @@ namespace Inventory_Management_System
             await SwitchFormAsync(_auditTrailForm);
         }
 
-      
+
         // Setup side bar buttons
         private Button? _activeButton = null;
         private void SetUpSideBarButtons(List<Button> button)
@@ -509,7 +509,7 @@ namespace Inventory_Management_System
         // Setup side bar user profile n pass
         public void SetUserInfo(NewChangesModel? newChanges, string newHashPass)
         {
-            lbl_Username.Text = newChanges?.UserName;
+           // lbl_Username.Text = newChanges?.UserName;
             lbl_Fullname.Text = $"{newChanges?.FirstName} {newChanges?.LastName}";
 
             // Update current user object too // new
@@ -630,7 +630,7 @@ namespace Inventory_Management_System
             }
         }
 
-        
+
 
         public void ForceSignOut(string reason)
         {
@@ -680,7 +680,7 @@ namespace Inventory_Management_System
         public AuditTrailForm _auditTrailForm;
         public AuditTrailPresenter _auditTrailPresenter;
 
-        
+   
     }
 }
 
